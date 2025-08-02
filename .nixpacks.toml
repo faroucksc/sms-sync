@@ -1,0 +1,6 @@
+# Force Dokploy to use Dockerfile instead of Nixpacks auto-detection
+[variables]
+DISABLE_NIXPACKS = "true"
+
+[start]
+cmd = "cron -f"
