@@ -27,5 +27,9 @@ RUN mkdir -p /app/logs
 # Expose port for health checks (optional)
 EXPOSE 8080
 
-# Run cron in foreground
-CMD ["cron", "-f"]
+# Copy and setup start script
+COPY start.sh /app/start.sh
+RUN chmod +x /app/start.sh
+
+# Run the start script
+CMD ["/app/start.sh"]
