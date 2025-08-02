@@ -15,6 +15,7 @@ COPY config.py .
 COPY db.py .
 COPY cloudflare.py .
 COPY utils.py .
+COPY health.py .
 
 # Setup cron job
 COPY crontab /etc/cron.d/sync-cron
