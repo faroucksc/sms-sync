@@ -1,0 +1,2 @@
+*/5 * * * * cd /app && /usr/local/bin/python sync.py >> /app/logs/sync.log 2>&1
+# Empty line is required at the end of this file for a valid cron file 

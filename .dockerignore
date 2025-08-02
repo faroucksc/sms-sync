@@ -1,0 +1,12 @@
+.env
+.env.local
+.env.*.local
+logs/
+*.log
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+.git/
+.gitignore
+README.md
